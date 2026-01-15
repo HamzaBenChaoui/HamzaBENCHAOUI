@@ -1,95 +1,118 @@
-## 🛠 Technical Stack
+<div align="center">
+
+<img src="https://camo.githubusercontent.com/ff194145269d4ac5d2df4cc4f6c0d94c1432532a3dcca4b0e1be18ba214d12da/68747470733a2f2f7777772e77696e677374656368736f6c7574696f6e732e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032322f30332f66756c6c2d737461636b2d646576656c6f706d656e742e676966" width="150" style="border-radius:50%" />
+
+# 👋 Hi, I'm Hamza Benchaoui
+
+🚀 **Passionate Full-Stack Developer | Tech Innovator | Continuous Learner**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram)](https://instagram.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)](https://github.com/hamzabenchaoui)
+
+![Profile Views](https://komarev.com/ghpvc/?username=hamzabenchaoui&color=blue)
+
+</div>
+
+---
+
+## 📊 GitHub Analytics
+
+<div align="center">
+
+### 🔝 Top Languages
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=hamzabenchaoui&layout=compact&theme=tokyonight)
+
+### 📈 GitHub Stats
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=hamzabenchaoui&show_icons=true&theme=tokyonight)
+
+### 🔥 GitHub Streak
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=hamzabenchaoui&theme=tokyonight)
+
+</div>
+
+---
+
+## 🛠️ Technical Stack
 
 ### 👨‍💻 Programming Languages
-<p align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="40"/>
-</p>
+![JavaScript](https://skillicons.dev/icons?i=js)
+![TypeScript](https://skillicons.dev/icons?i=ts)
+![Python](https://skillicons.dev/icons?i=py)
+![Java](https://skillicons.dev/icons?i=java)
+![PHP](https://skillicons.dev/icons?i=php)
+![C](https://skillicons.dev/icons?i=c)
 
 ---
 
 ### 🌐 Frontend Development
-<p align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" width="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40"/>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="40"/>
-</p>
+![Angular](https://skillicons.dev/icons?i=angular)
+![React](https://skillicons.dev/icons?i=react)
+![NextJS](https://skillicons.dev/icons?i=nextjs)
+![Tailwind](https://skillicons.dev/icons?i=tailwind)
+![Bootstrap](https://skillicons.dev/icons?i=bootstrap)
+![HTML](https://skillicons.dev/icons?i=html)
+![CSS](https://skillicons.dev/icons?i=css)
+![Sass](https://skillicons.dev/icons?i=sass)
 
+---
 
-## 🚀 Live Demo
+### ⚙️ Backend & Databases
+![NodeJS](https://skillicons.dev/icons?i=nodejs)
+![Express](https://skillicons.dev/icons?i=express)
+![Spring](https://skillicons.dev/icons?i=spring)
+![Laravel](https://skillicons.dev/icons?i=laravel)
+![MongoDB](https://skillicons.dev/icons?i=mongodb)
+![MySQL](https://skillicons.dev/icons?i=mysql)
+![PostgreSQL](https://skillicons.dev/icons?i=postgres)
+![Firebase](https://skillicons.dev/icons?i=firebase)
 
-Explore the live version of my portfolio here: [https://hamzabenchaoui.vercel.app/](https://hamzabenchaoui.vercel.app/)
+---
 
-## 🛠️ Technologies Used
+### 🔐 Security & Authentication
+- JWT Authentication  
+- Role-Based Access Control (RBAC)  
+- OAuth2 / Social Login  
+- Secure REST APIs  
 
-This project is built using a modern and robust tech stack:
+---
 
-*   **Framework:** [Astro](https://astro.build/) (for content-focused websites and static site generation)
-*   **Frontend:** [React](https://react.dev/) (for interactive UI components)
-*   **Styling:** [Tailwind CSS](https://tailwindcss.com/) (for utility-first CSS)
-*   **Animations:** [Framer Motion](https://www.framer.com/motion/) & [GSAP](https://gsap.com/)
-*   **3D Graphics:** [@react-three/fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction) & [@react-three/drei](https://github.com/pmndrs/drei)
-*   **Form Management:** [React Hook Form](https://react-hook-form.com/) & [Zod](https://zod.dev/) (for schema validation)
-*   **Icons:** [Lucide React](https://lucide.dev/) & [@tabler/icons-react](https://tabler-icons.io/)
-*   **Deployment:** [Vercel](https://vercel.com/)
+### 🧪 Testing
+![Jest](https://skillicons.dev/icons?i=jest)
+![Selenium](https://skillicons.dev/icons?i=selenium)
+![Postman](https://skillicons.dev/icons?i=postman)
 
-## ⚙️ Installation & Local Development
+- Unit Testing  
+- Integration Testing  
+- API Testing  
 
-To get a local copy up and running, follow these simple steps.
+---
 
-### Prerequisites
+### 🎨 Design & Tools
+![Figma](https://skillicons.dev/icons?i=figma)
+![VSCode](https://skillicons.dev/icons?i=vscode)
+![IntelliJ](https://skillicons.dev/icons?i=idea)
 
-Make sure you have Node.js (v18 or higher) and npm installed on your machine.
+---
 
-### Clone the repository
+## 💡 About Me
 
-```bash
-git clone https://github.com/hamzabenchaoui/hamza-benchaoui-portfolio.git
-cd hamza-benchaoui-portfolio
-```
+I am a **Full-Stack Developer** specialized in:
+- Modern Frontend development (Angular / React / Next.js)
+- Secure and scalable Backend systems (Spring Boot / Node.js)
+- Cloud & DevOps technologies (Docker, AWS, Cloudinary)
+- Testing and Clean Code best practices
 
-### Install dependencies
+I strongly believe that **continuous learning** is the key to building high-quality, scalable applications 🚀
 
-```bash
-npm install
-```
+---
 
-### Run the development server
+## ☕ Support My Work
 
-```bash
-npm run dev
-```
+If you like my work and want to support me ❤️
 
-This will start the development server at `http://localhost:4321`.
+[![PayPal](https://img.shields.io/badge/PayPal-Support-blue?style=for-the-badge&logo=paypal)](https://paypal.me)
 
-### Build for production
+---
 
-```bash
-npm run build
-```
-
-This command will build your production site to the `./dist/` directory.
-
-### Preview the production build
-
-```bash
-npm run preview
-```
-
-## 📞 Contact
-
-Feel free to reach out to me through the contact form on my portfolio or connect with me on:
-
-*   **LinkedIn:** [https://www.linkedin.com/in/hamzabenchaoui/](https://www.linkedin.com/in/hamza-benchaoui-14a421268/)
-*   **GitHub:** [https://github.com/hamzabenchaoui](https://github.com/hamzabenchaoui)
-*   **Email:** hamzabenchaoui2004@gmail.com
-
-Thank you for visiting my portfolio!
+⭐ **Don’t forget to star my repositories if you find them useful!**
