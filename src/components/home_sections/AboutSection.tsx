@@ -417,7 +417,7 @@ export function AboutSection() {
 
                         <IconCloud images={images} aria-label="My Skills"/>
                         <div>
-                            <a href={'/CV%20Hamza%20BENCHAOUI.pdf'} download={'CV Hamza BENCHAOUI'}>
+                            <a href={'/Cv_Hamza_BENCHAOUI_STAGE.pdf'} download={'CV Hamza BENCHAOUI'}>
                                 <Button className="flex items-center gap-2"
                                         variant="outline">
                                     <Download className="h-4 w-4" />
