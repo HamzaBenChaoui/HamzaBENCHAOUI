@@ -1,20 +1,28 @@
-# Hamza BENCHAOUI | Software Engineer Portfolio
+## 🛠 Technical Stack
 
-Welcome to the official portfolio of Hamza BENCHAOUI, a passionate Software Engineer specializing in building modern, high-performance, and scalable web applications.
+### 👨‍💻 Programming Languages
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="40"/>
+</p>
 
-This portfolio showcases my skills, projects, and experience in full-stack development, with a strong focus on cutting-edge frontend technologies and robust backend solutions.
+---
 
-## ✨ Features
+### 🌐 Frontend Development
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" width="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" width="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="40"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="40"/>
+</p>
 
-*   **Modern & Responsive UI:** Built with Astro and React, styled with Tailwind CSS for a seamless experience across all devices.
-*   **Interactive Elements:** Engaging animations and interactive components powered by Framer Motion and GSAP.
-*   **Dynamic Project Showcase:** Detailed sections for showcasing personal and professional projects.
-*   **SEO Optimized:** Enhanced with structured data, meta tags, and a sitemap for better search engine visibility.
-*   **Contact Form:** A functional contact form with Zod validation and React Hook Form for robust user input.
-*   **Integrated Blog:** A dedicated blog section to share insights, technical articles, and project updates.
-*   **Dark Mode Toggle:** User-friendly dark mode for improved accessibility and aesthetics.
-*   **Interactive Star Background:** A captivating 3D starfield background using React Three Fiber.
-*   **Resume Page:** An accessible HTML version of my resume for easy viewing and indexing.
 
 ## 🚀 Live Demo
 
