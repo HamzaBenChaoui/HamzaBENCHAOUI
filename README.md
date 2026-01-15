@@ -80,8 +80,8 @@ npm run preview
 
 Feel free to reach out to me through the contact form on my portfolio or connect with me on:
 
-*   **LinkedIn:** [https://www.linkedin.com/in/hamzabenchaoui/](https://www.linkedin.com/in/hamzabenchaoui/)
+*   **LinkedIn:** [https://www.linkedin.com/in/hamzabenchaoui/](https://www.linkedin.com/in/hamza-benchaoui-14a421268/)
 *   **GitHub:** [https://github.com/hamzabenchaoui](https://github.com/hamzabenchaoui)
-*   **Email:** hamzabenchaoui@gmail.com
+*   **Email:** hamzabenchaoui2004@gmail.com
 
 Thank you for visiting my portfolio!
