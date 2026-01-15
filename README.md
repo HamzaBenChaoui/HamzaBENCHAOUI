@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://camo.githubusercontent.com/ff194145269d4ac5d2df4cc4f6c0d94c1432532a3dcca4b0e1be18ba214d12da/68747470733a2f2f7777772e77696e677374656368736f6c7574696f6e732e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032322f30332f66756c6c2d737461636b2d646576656c6f706d656e742e676966" width="150" style="border-radius:50%" />
+<img src="https://camo.githubusercontent.com/ff194145269d4ac5d2df4cc4f6c0d94c1432532a3dcca4b0e1be18ba214d12da/68747470733a2f2f7777772e77696e677374656368736f6c7574696f6e732e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032322f30332f66756c6c2d737461636b2d646576656c6f706d656e742e676966" width="700" style="border-radius:50%" />
 
 # 👋 Hi, I'm Hamza Benchaoui
 
@@ -76,15 +76,6 @@
 - Secure REST APIs  
 
 ---
-
-### 🧪 Testing
-![Jest](https://skillicons.dev/icons?i=jest)
-![Selenium](https://skillicons.dev/icons?i=selenium)
-![Postman](https://skillicons.dev/icons?i=postman)
-
-- Unit Testing  
-- Integration Testing  
-- API Testing  
 
 ---
 
