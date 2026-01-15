@@ -321,7 +321,7 @@ export function AboutSection() {
                         <AboutStars />
                         <div className="relative p-5 w-full aspect-square">
                             <img
-                                src="/HamzaBENCHAOUI.png"
+                                src="/HamzaBENCHAOUI.jpg"
                                 alt="Hamza BENCHAOUI"
                                 className="w-full px-5 h-auto rounded-full object-contain"
                             />
