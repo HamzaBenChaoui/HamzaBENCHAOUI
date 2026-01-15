@@ -9,7 +9,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://noureddinedriouech.vercel.app/",
+  site: "https://hamzabenchaoui.vercel.app/",
   integrations: [react(), sitemap()],
 
   vite: {

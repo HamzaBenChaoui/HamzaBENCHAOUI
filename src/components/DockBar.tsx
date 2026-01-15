@@ -103,7 +103,7 @@ export function DockBar() {
         {
             title: "Email",
             icon: <IconMail className="h-full w-full text-neutral-900 dark:text-neutral-100" />,
-            href: "mailto:nourddinedriouech@gmail.com",
+            href: "mailto:hamzabenchaoui@gmail.com",
         },
         {
             title: theme === "light" ? "Switch to dark mode" : "Switch to light mode",
@@ -113,12 +113,12 @@ export function DockBar() {
         {
             title: "LinkedIn",
             icon: <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-            href: "https://www.linkedin.com/in/noureddinedriouech/",
+            href: "https://www.linkedin.com/in/hamzabenchaoui/",
         },
         {
             title: "GitHub",
             icon: <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-            href: "https://github.com/NoureddineDRIOUECH",
+            href: "https://github.com/hamzabenchaoui",
         },
     ];
 

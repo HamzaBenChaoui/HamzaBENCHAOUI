@@ -1,6 +1,6 @@
-# Noureddine DRIOUECH | Software Engineer Portfolio
+# Hamza BENCHAOUI | Software Engineer Portfolio
 
-Welcome to the official portfolio of Noureddine DRIOUECH, a passionate Software Engineer specializing in building modern, high-performance, and scalable web applications.
+Welcome to the official portfolio of Hamza BENCHAOUI, a passionate Software Engineer specializing in building modern, high-performance, and scalable web applications.
 
 This portfolio showcases my skills, projects, and experience in full-stack development, with a strong focus on cutting-edge frontend technologies and robust backend solutions.
 
@@ -18,7 +18,7 @@ This portfolio showcases my skills, projects, and experience in full-stack devel
 
 ## 🚀 Live Demo
 
-Explore the live version of my portfolio here: [https://noureddinedriouech.vercel.app/](https://noureddine-driouech.vercel.app/)
+Explore the live version of my portfolio here: [https://hamzabenchaoui.vercel.app/](https://hamzabenchaoui.vercel.app/)
 
 ## 🛠️ Technologies Used
 
@@ -44,8 +44,8 @@ Make sure you have Node.js (v18 or higher) and npm installed on your machine.
 ### Clone the repository
 
 ```bash
-git clone https://github.com/NoureddineDRIOUECH/noureddine-driouech-portfolio.git
-cd noureddine-driouech-portfolio
+git clone https://github.com/hamzabenchaoui/hamza-benchaoui-portfolio.git
+cd hamza-benchaoui-portfolio
 ```
 
 ### Install dependencies
@@ -80,8 +80,8 @@ npm run preview
 
 Feel free to reach out to me through the contact form on my portfolio or connect with me on:
 
-*   **LinkedIn:** [https://www.linkedin.com/in/noureddinedriouech/](https://www.linkedin.com/in/noureddinedriouech/)
-*   **GitHub:** [https://github.com/NoureddineDRIOUECH](https://github.com/NoureddineDRIOUECH)
-*   **Email:** nourddinedriouech@gmail.com
+*   **LinkedIn:** [https://www.linkedin.com/in/hamzabenchaoui/](https://www.linkedin.com/in/hamzabenchaoui/)
+*   **GitHub:** [https://github.com/hamzabenchaoui](https://github.com/hamzabenchaoui)
+*   **Email:** hamzabenchaoui@gmail.com
 
 Thank you for visiting my portfolio!

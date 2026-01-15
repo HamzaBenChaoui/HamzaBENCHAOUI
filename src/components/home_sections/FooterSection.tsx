@@ -25,7 +25,7 @@ export function FooterSection() {
                         whileHover={{ scale: 1.05 }}
                         transition={{ type: "spring", stiffness: 400, damping: 10 }}
                     >
-                        Noureddine DRIOUECH
+                        Hamza BENCHAOUI
                     </motion.div>
 
                     <div className="flex flex-wrap justify-center gap-8 mb-8">
@@ -45,7 +45,7 @@ export function FooterSection() {
 
                     <div className="flex gap-4 mb-8">
                         <motion.a
-                            href="https://github.com/NoureddineDRIOUECH"
+                            href="https://github.com/hamzabenchaoui"
                             target="_blank"
                             className="h-10 w-10 rounded-full bg-muted/80 flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
                             whileHover={{ y: -5 }}
@@ -55,7 +55,7 @@ export function FooterSection() {
                             <span className="sr-only">GitHub</span>
                         </motion.a>
                         <motion.a
-                            href="https://www.linkedin.com/in/noureddinedriouech/"
+                            href="https://www.linkedin.com/in/hamza-benchaoui-14a421268/"
                             target="_blank"
                             className="h-10 w-10 rounded-full bg-muted/80 flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
                             whileHover={{ y: -5 }}
@@ -75,7 +75,7 @@ export function FooterSection() {
                             <span className="sr-only">Upwork</span>
                         </motion.a>
                         {/*<motion.a*/}
-                        {/*    href="https://x.com/NoureddineDRIOUECH"*/}
+                        {/*    href="https://x.com/hamzabenchaoui"*/}
                         {/*    target="_blank"*/}
                         {/*    className="h-10 w-10 rounded-full bg-muted/80 flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"*/}
                         {/*    whileHover={{ y: -5 }}*/}
@@ -85,7 +85,7 @@ export function FooterSection() {
                         {/*    <span className="sr-only">X</span>*/}
                         {/*</motion.a>*/}
                         <motion.a
-                            href="https://www.instagram.com/noureddine.driouech/"
+                            href="https://www.instagram.com/hamza.benchaoui.14/"
                             target="_blank"
                             className="h-10 w-10 rounded-full bg-muted/80 flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
                             whileHover={{ y: -5 }}
@@ -97,7 +97,7 @@ export function FooterSection() {
                     </div>
 
                     <div className="text-center text-muted-foreground text-sm mb-8">
-                        <p>© {new Date().getFullYear()} Noureddine DRIOUECH. All rights reserved.</p>
+                        <p>© {new Date().getFullYear()} Hamza BENCHAOUI. All rights reserved.</p>
                         <p className="mt-1">Designed and built with passion.</p>
                     </div>
 

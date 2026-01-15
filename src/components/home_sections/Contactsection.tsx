@@ -28,40 +28,44 @@ export function ContactSection() {
         resolver: zodResolver(formSchema),
     });
 
-    const onSubmit = async (data: z.infer<typeof formSchema>) => {
-        const toastId = toast.loading("Sending your message...");
+  const onSubmit = async (data: z.infer<typeof formSchema>) => {
+    const toastId = toast.loading("Sending your message...");
 
-        try {
-            const response = await fetch("https://formsubmit.co/ajax/nourddinedriouech@gmail.com", {
+    try {
+        const response = await fetch(
+            "https://formsubmit.co/ajax/hamzabenchaoui2004@gmail.com",
+            {
                 method: "POST",
                 headers: {
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
                 },
-                body: JSON.stringify({
-                    ...data,
-                    _captcha: "false",
-                    _template: "table",
-                    _honey: ""
-                })
-            });
-
-            const result = await response.json();
-
-            if (result.success === "true") {
-                toast.success("Message sent successfully! I'll get back to you soon.", {
-                    id: toastId,
-                    duration: 5000
-                });
-                reset();
+                body: JSON.stringify(data),
             }
-        } catch (error) {
-            toast.error("Failed to send message. Please try again later.", {
-                id: toastId,
-                duration: 5000
-            });
+        );
+
+        const result = await response.json();
+
+        if (result.success === "true" || response.ok) {
+            toast.success(
+                "Message sent successfully! I'll get back to you soon.",
+                { id: toastId, duration: 5000 }
+            );
+            reset();
+        } else {
+            throw new Error(result.message || "FormSubmit failed");
         }
-    };
+    } catch (error: any) {
+        toast.error(
+            error.message || "Failed to send message. Please try again later.",
+            {
+                id: toastId,
+                duration: 5000,
+            }
+        );
+    }
+  };
+
 
     return (
         <section id="contact" className="py-24 relative px-5">
@@ -103,7 +107,7 @@ export function ContactSection() {
                                             <Label htmlFor="name">Your name</Label>
                                             <Input
                                                 id="name"
-                                                placeholder="Nour DRC"
+                                                placeholder="Hamza BNC"
                                                 type="text"
                                                 {...register("name")}
                                             />

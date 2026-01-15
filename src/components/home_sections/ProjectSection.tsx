@@ -37,50 +37,41 @@ import {AchievementCard} from "@/components/achievement-card.tsx";
 
 export function ProjectSection() {
     const [activeFilter, setActiveFilter] = useState("All");
-    const filters = ["All", "Web", "Mobile", "Scripts"];
+    const filters = ["All", "Web", "Scripts"];
 
     const projects = [
+ {
+  id: 3,
+  title: "AttendifyAI – Smart Attendance System",
+  description: "An AI-powered web application that automatically records student attendance from a group photo. AttendifyAI reduces time spent on roll calls, minimizes manual errors, and centralizes attendance data for easy analysis by teachers and administration.",
+  image: "ai.png",
+  category: "AI / Web",
+  tags: ["Python", "FastAPI", "React", "InsightFace", "Face Recognition", "AI"],
+  liveUrl: "",
+  githubUrl: "https://github.com/HamzaBenChaoui/AttendifyAI.git"
+},
 
-        {
-            id: 2,
-            title: "Companions AI",
-            description: "a platform where you can create, manage, and interact with personalized AI-powered companions designed to help you learn and explore various subjects.",
-            image: "companions.webp",
-            category: "Web",
-            tags: ["Next.js", "TypeScript", "Tailwind CSS","Shadcn UI", "Git", "Figma","UI/UX"],
-            liveUrl: "https://companions-nine.vercel.app/",
-            githubUrl: "https://github.com/NoureddineDRIOUECH/Companions",
-        },
-        {
-            id: 3,
-            title: "Fast Food Ordering",
-            description: "This is a mobile application for ordering fast food, built with React Native and Expo. It allows users to browse a menu, add items to their cart, and place orders. The app uses Appwrite for its backend services and Zustand for state management.",
-            image: "fastFoodMobileApp.svg",
-            category: "Mobile",
-            tags: ["Figma", "UI/UX", "React Native", "Appwrite" ,"Git"],
-            liveUrl: "",
-            githubUrl: "https://github.com/NoureddineDRIOUECH/Fast-Food.git",
-        },
-        {
-            id: 1,
-            title: "Coffee Store WebSite",
-            description: "A Coffee Store Website with an E-commerce Platform that allows customers to browse coffee products, add items to their cart, place orders, and track them. The website should also include an Admin Panel to manage products, inventory, and customer orders.",
-            image: "cofeeStore.webp",
-            category: "Web",
-            tags: ["HTML", "CSS", "JavaScript", "MySQL","PHP", "Git"],
-            liveUrl: "",
-            githubUrl: "https://github.com/NoureddineDRIOUECH/DRCoofee---Coffee-Srore",
-        },
-        {
+            {
             id: 4,
-            title: "Data Scraping &  Automation",
-            description: "Hands-on experience in automation and data scraping using tools like Python and Selenium. Skilled in building efficient scripts to extract, process, and manage web data.",
-            image: "dataScraping.webp",
-            category: "Scripts",
-            tags: ["Python", "Selenium", "Scrapy", "Automation"],
+            title: "RideHub - Urban Mobility Platform",
+            description: "Developed a modern web platform connecting fleet managers with customers looking to rent two-wheel vehicles efficiently. The platform supports vehicle management, booking, rental tracking, and automated notifications.",
+            image: "client_ridhub.png",
+            category: "Web",
+            tags: ["Spring Boot", "Next.js", "Angular", "Cloudinary", "iText PDF", "JavaMail"],
             liveUrl: "",
-            githubUrl: "https://github.com/NoureddineDRIOUECH/-wordpress-product-automation",
-        },
+            githubUrl: "https://github.com/HamzaBenChaoui/Application-web_Angular_NextJS_Spring_BOOT.git"
+            },
+            {
+                id: 5,
+                title: "Email Scraping & Automated Mailing",
+                description: "Developed a system to scrape emails from websites and automate sending personalized emails. Utilized Python and Selenium for web scraping, and integrated mailing automation for efficient communication.",
+                image: "dataScraping.webp",
+                category: "Scripts",
+                tags: ["Java", "Jsoup", "Scrapy", "Automation", "Email"],
+                liveUrl: "",
+                githubUrl: "https://github.com/HamzaBenChaoui/EmailScraperBot.git"
+                }
+        ,
     ];
 
     const tagIcons: Record<string, JSX.Element> = {
@@ -294,57 +285,6 @@ export function ProjectSection() {
                 {/*</div>*/}
             </div>
         </section>
-            <section id="industry-contributions" className="py-16">
-                <div className="container px-4 sm:px-6">
-                    <div className="max-w-3xl flex flex-col items-center justify-center mx-auto text-center mb-12">
-                        <Badge className="mb-4 px-4 py-1 text-sm" variant="secondary">
-                            Industry Recognition
-                        </Badge>
-
-                        <SplitText
-
-                            text="Professional Contributions"
-
-                            className="text-3xl drop-shadow-[0_0_13px_rgba(59,59,59,1)] dark:drop-shadow-[0_0_20px_rgba(200,200,200,1)] sm:text-4xl md:text-5xl font-bold tracking-tight mb-4"
-
-                            delay={100}
-
-                            duration={0.6}
-
-                            ease="power3.out"
-
-                            splitType="chars"
-
-                            from={{ opacity: 0, y: 40 }}
-
-                            to={{ opacity: 1, y: 0 }}
-
-                            threshold={0.1}
-
-                            rootMargin="-100px"
-
-                            textAlign="center"
-
-
-                        />
-                        <p className="text-muted-foreground md:text-lg max-w-2xl mx-auto">
-                            Key solutions I helped build as part of professional teams
-                        </p>
-
-                    </div>
-
-                    <div className="max-w-4xl mx-auto">
-                        <AchievementCard
-                            title="Garista SaaS Platform"
-                            description="Cloud-based restaurant management. Contributed as a core developer building real-time analytics."
-                            badges={["Next.js", "TypeScript","React.js", "Laravel", "MySQL", "Stripe", "Real-time Analytics"]}
-                            impact="UN World Forum on Gastronomy Tourism ,SelectUSA Investment Summit"
-                            link="https://garista.com"
-                        />
-                        {/*<Component />*/}
-                    </div>
-                </div>
-            </section>
    </>
     );
 }

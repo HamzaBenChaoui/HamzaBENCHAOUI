@@ -45,7 +45,7 @@ export function HeroSection() {
                         </div>
 
                         <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight drop-shadow-[0_0_13px_rgba(59,59,59,1)] dark:drop-shadow-[0_0_20px_rgba(200,200,200,1)] leading-tight">
-                            Noureddine DRIOUECH
+                            Hamza BENCHAOUI
                         </h1>
 
                         <p >
@@ -62,7 +62,7 @@ export function HeroSection() {
 
                             <div className="flex gap-6">
                                 <motion.a
-                                    href="https://github.com/NoureddineDRIOUECH"
+                                    href="https://github.com/hamzabenchaoui"
                                     target="_blank"
                                     whileHover={{ y: -5, scale: 1.1 }}
                                     className="text-muted-foreground hover:text-foreground transition-colors"
@@ -72,7 +72,7 @@ export function HeroSection() {
                                     <span className="sr-only">GitHub</span>
                                 </motion.a>
                                 <motion.a
-                                    href="https://www.linkedin.com/in/noureddinedriouech/"
+                                    href="https://www.linkedin.com/in/hamza-benchaoui-14a421268/"
                                     target="_blank"
                                     whileHover={{ y: -5, scale: 1.1 }}
                                     className="text-muted-foreground hover:text-foreground transition-colors"
@@ -92,7 +92,7 @@ export function HeroSection() {
                                     <span className="sr-only">Upwork</span>
                                 </motion.a>
                                 <motion.a
-                                    href="https://www.instagram.com/noureddine.driouech/"
+                                    href="https://www.instagram.com/hamza.benchaoui.14/"
                                     target="_blank"
                                     whileHover={{ y: -5, scale: 1.1 }}
                                     className="text-muted-foreground hover:text-foreground transition-colors"

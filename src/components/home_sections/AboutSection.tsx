@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Download, Award, BookOpen,  Clock, Code,  Briefcase, Cpu, Smartphone, Cloud, GraduationCap as GraduationCapIcon,
+import { Download, Award, BookOpen, Clock, Code, Briefcase, Cpu, Smartphone, Cloud, GraduationCap as GraduationCapIcon,
     School as UniversityIcon } from "lucide-react";
 import { AboutStars } from "@/components/ui/stars";
 import {
@@ -11,17 +11,13 @@ import {
     SiPhp,
     SiReact,
     SiNextdotjs,
-    SiReact as SiReactNative,
     SiTailwindcss,
     SiNodedotjs,
     SiLaravel,
     SiSpring,
     SiMysql,
-    SiMongodb,
     SiPostgresql,
-    SiRedis,
     SiDocker,
-    SiKubernetes,
     SiVercel,
     SiLinux,
     SiJest,
@@ -30,8 +26,6 @@ import {
     SiGit,
     SiShadcnui,
     SiFramer,
-    SiJenkins,
-    SiRabbitmq,
     SiApachekafka,
     SiWebassembly,
     SiCodemirror
@@ -46,215 +40,201 @@ export function AboutSection() {
         "JavaScript",
         "TypeScript",
         "Python",
-        // "Java",
+        "Java",
         "PHP",
         "React",
         "Next.js",
-        "React Native",
         "Tailwind CSS",
         "Shadcn UI",
-        "Framer Motion",
+        "Angular",
         "Node.js",
         "Laravel",
         "Spring Boot",
         "MySQL",
-        "MongoDB",
         "PostgreSQL",
-        "Redis",
         "Docker",
-        "Kubernetes",
-        "CI/CD Pipelines",
-        "AWS",
         "Vercel",
         "Linux System Administration",
-        "Jest",
-        "Selenium",
-        "System Design",
-        "Microservices Architecture",
-        "WebSockets",
-            "Agile Methodologies",
-            "Git Version Control",
-            "Code Review",
+        "Agile Methodologies",
+        "Git Version Control",
+        "Code Review",
         "Web Automation",
         "Data Scraping",
+        "Junit5",
     ];
 
+    // map known skill names to simpleicons slugs
+    const skillToSlug: Record<string, string> = {
+        "JavaScript": "javascript",
+        "TypeScript": "typescript",
+        "Python": "python",
+        "Java": "java",
+        "PHP": "php",
+        "React": "react",
+        "Next.js": "nextdotjs",
+        "Tailwind CSS": "tailwindcss",
+        "Shadcn UI": "shadcnui",
+        "Angular": "angular",
+        "Node.js": "nodedotjs",
+        "Laravel": "laravel",
+        "Spring Boot": "spring",
+        "MySQL": "mysql",
+        "PostgreSQL": "postgresql",
+        "Docker": "docker",
+        "Vercel": "vercel",
+        "Linux System Administration": "linux",
+        "Junit5": "junit",
+        "Selenium": "selenium",
+        "Git Version Control": "git",
+        "Data Scraping": "scrapy",
+        "Framer Motion": "framer",
+    };
+
+    function getSlugsFromSkills(list: string[]) {
+        const seen = new Set<string>();
+        const slugs: string[] = [];
+        for (const s of list) {
+            const slug = skillToSlug[s] ?? s.toLowerCase().replace(/[^a-z0-9]/g, "");
+            if (!seen.has(slug)) {
+                seen.add(slug);
+                slugs.push(slug);
+            }
+        }
+        return slugs;
+    }
+
+    const images = getSlugsFromSkills(skills).map((slug) => `https://cdn.simpleicons.org/${slug}`);
 
     const skillIcons: Record<string, JSX.Element> = {
-        // Languages
         JavaScript: <SiJavascript className="text-yellow-400" />,
         TypeScript: <SiTypescript className="text-blue-500" />,
         Python: <SiPython className="text-blue-600" />,
         PHP: <SiPhp className="text-purple-500" />,
-
-        // Frontend
         React: <SiReact className="text-cyan-400" />,
         "Next.js": <SiNextdotjs className="text-black dark:text-white" />,
-        "React Native": <SiReactNative className="text-cyan-500" />,
         "Tailwind CSS": <SiTailwindcss className="text-sky-400" />,
         "Shadcn UI": <SiShadcnui className="text-black dark:text-white" />,
         "Framer Motion": <SiFramer className="text-purple-600" />,
-
-        // Backend
+        Angular: (
+            <img src="https://cdn.simpleicons.org/angular" alt="Angular" className="h-5 w-5 object-contain" />
+        ),
         "Node.js": <SiNodedotjs className="text-green-600" />,
         Laravel: <SiLaravel className="text-red-500" />,
         "Spring Boot": <SiSpring className="text-green-600" />,
-
-        // Databases
+        Java: (
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSey1U4GoHUdFcI4H7_SiF_oWUPHIR0RM9N5g&s"
+                alt="Java"
+                className="h-5 w-5 object-contain"
+                onError={(e: any) => {
+                    e.currentTarget.onerror = null;
+                    e.currentTarget.src = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg";
+                }}
+            />
+        ),
+        Junit5: (
+            <img
+                src="https://e7.pngegg.com/pngimages/194/707/png-clipart-junit-test-automation-software-testing-unit-testing-software-framework-others-text-trademark.png"
+                alt="JUnit"
+                className="h-5 w-5 object-contain"
+                onError={(e: any) => {
+                    e.currentTarget.onerror = null;
+                    e.currentTarget.src = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/junit/junit-plain.svg";
+                }}
+            />
+        ),
         MySQL: <SiMysql className="text-blue-700" />,
-        MongoDB: <SiMongodb className="text-green-500" />,
         PostgreSQL: <SiPostgresql className="text-blue-400" />,
-        Redis: <SiRedis className="text-red-700" />,
-
-        // DevOps & Cloud
         Docker: <SiDocker className="text-blue-400" />,
-        Kubernetes: <SiKubernetes className="text-blue-500" />,
-        "CI/CD Pipelines": <SiJenkins className="text-red-400" />,
         Vercel: <SiVercel className="text-black dark:text-white" />,
         "Linux System Administration": <SiLinux className="text-black dark:text-white" />,
-
-        // Testing
         Jest: <SiJest className="text-red-600" />,
-        Selenium: <SiSelenium className="text-green-500" />,
-
-        // Architecture & Protocols
+        Jsoup: (
+            <img src="https://miro.medium.com/1*PUhJSYJsiAMJjCF_yMkq8A.jpeg" alt="Jsoup" className="h-5 w-5 object-contain" />
+        ),
         WebSockets: <SiSocketdotio className="text-black dark:text-white" />,
-        "Microservices Architecture": <SiDocker className="text-blue-400" />,
-
-        // Practices
         "Git Version Control": <SiGit className="text-orange-500" />,
-
-        // Specializations
-        "Web Automation": <SiSelenium className="text-green-500" />,
         "Data Scraping": <SiCodemirror className="text-yellow-500" />,
-
-        // Concepts (using generic icons)
         "Algorithms & Data Structures": <SiWebassembly className="text-purple-500" />,
         "System Design": <SiApachekafka className="text-black dark:text-white" />,
         "Code Review": <SiCodemirror className="text-yellow-500" />,
-        "Agile Methodologies": <SiRabbitmq className="text-orange-500" />,
+        "Agile Methodologies": <SiApachekafka className="text-orange-500" />,
     };
     const experiences = [
         {
-            company: "Garista",
-            href: "https://garista.com",
-            badges: ["React.js", "TypeScript", "Shadcn UI", "Redux", "React Query"],
-            location: "Casablanca, Morocco",
-            title: "Frontend Developer",
-            logoUrl: "/garistaofficial_logo.jpeg",
-            period: "Apr 2024 - Present",
-            description:
-                "Led development of SaaS restaurant management platform using React.js and Shadcn UI. ",
-            achievements: [
-                "Architected responsive UI components reducing load time by 35%",
-                "Implemented real-time analytics dashboard boosting client engagement metrics",
-                "Integrated payment processing handling $2M+ transactions annually",
-                "Presented product at GITEX Africa tech conference"
-            ]
-        },
-        {
-            company: "WHD Agency",
-            href: "https://whd.agency",
-            badges: ["Laravel", "Next.js", "Python", "Web Scraping", "Automation"],
-            location: "Casablanca, Morocco",
-            title: "Full Stack Developer",
-            logoUrl: "/whdagency_logo.jpeg",
-            period: "Apr 2022 - Jun 2024", // Fixed date order
-            description:
-                "Developed full-stack solutions for e-commerce and business automation.",
-            achievements: [
-                "Built automated product management system reducing manual entry by 80%",
-                "Created web scraping tools extracting 50k+ product listings monthly",
-                "Optimized React interfaces improving page speed scores by 45%",
-                "Integrated REST APIs connecting Laravel backend with Next.js frontends"
-            ]
-        },
-        {
-            company: "Digimperial",
-            href: "https://digimperial.com",
-            badges: ["Python", "Selenium", "Automation", "CAPTCHA Solving"],
-            location: "Casablanca, Morocco",
-            title: "Automation Engineer",
-            logoUrl: "/digimperial.jpeg",
-            period: "Aug 2023 - Sep 2023",
-            description:
-                "Specialized in web automation and data extraction solution.",
-            achievements: [
-                "Developed CAPTCHA-solving algorithms with 92% success rate",
-                "Automated form submission workflows processing 500+ forms daily",
-                "Created browser automation scripts reducing manual data entry time",
-                "Optimized Selenium workflows decreasing execution time by 40%"
-            ]
-        },
-    ];
-    const slugs = [
-        "typescript",
-        "javascript",
-        // "dart",
-        // "java",
-        "react",
-        "laravel",
-        "python",
-        "selenium",
-        "mysql",
-        "linux",
-        "fedora",
-        "scrapy",
-        "tailwindcss",
-        "shadcnui",
-        // "flutter",
-        "android",
-        "html5",
-        "css",
-        "nodedotjs",
-        // "express",
-        "nextdotjs",
-        "prisma",
-        // "amazonaws",
-        "postgresql",
-        "firebase",
-        // "nginx",
-        "vercel",
-        // "testinglibrary",
-        // "jest",
-        // "cypress",
-        "docker",
-        "git",
-        "jira",
-        "github",
-        "gitlab",
-        // "visualstudiocode",
-        "androidstudio",
-        // "sonarqube",
-        "figma",
-    ];
-    const images = slugs.map(
-        (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`,
-    );
-    const education = [
-        {
-            degree: "Software Engineering",
-            institution: "National Higher School of Artificial Intelligence and Data Sciences, Taroudant",
-            period: "2024 - Present",
-            focus: "Systems Architecture · AI Engineering · Cloud Computing",
-            courses: ["Distributed Systems", "Machine Learning", "DevOps Practices"]
-        },
-        {
-            degree: "Diploma in Computer Science",
-            institution: "Higher School of Technology, Sidi Bennour",
-            period: "2022 - 2024",
-            focus: "Full-Stack Development · Databases · System Design",
-            courses: ["Web Technologies", "Database Management", "Software Engineering"]
-        },
-        {
-            degree: "Baccalaureate in Science",
-            institution: "National High School JAAFAR EL FASSI, Casablanca",
-            period: "2022",
-            focus: "Computer Science · Mathematics · Physics",
-            honors: "Graduated with distinction in technical sciences"
-        },
-    ];
+  company: "Kaoba",
+  href: "",
+  badges: [
+    "Next.js",
+    "Spring Boot",
+    "PostgreSQL",
+    "Supabase",
+    "Cloudinary",
+    "Tailwind CSS",
+    "Bootstrap",
+    "WordPress",
+    "Mailing System"
+  ],
+  location: "Had soualem, Morocco",
+  title: "Full Stack Developer Intern",
+  logoUrl: "/images.png",
+  period: "Jul 2025 - Aug 2025",
+  description:
+    "Completed a full-stack internship at Kaoba, contributing to both maintenance tasks and the development of a modern web platform.",
+  achievements: [
+    "Maintained and customized existing WordPress websites",
+    "Developed a full-stack platform using Next.js and Spring Boot",
+    "Integrated Cloudinary for image management and Supabase for backend services",
+    "Designed responsive UI using Tailwind CSS and Bootstrap",
+    "Implemented an email/mailing system for customer communication",
+    "Worked with PostgreSQL for data persistence and management"
+  ]
+},
+      {
+  company: "Commune of Sidi Bennour",
+  href: "",
+  badges: [
+    "HTML",
+    "CSS",
+    "Tailwind CSS",
+    "JavaScript",
+    "PHP",
+    "MySQL",
+    "XAMPP"
+  ],
+  location: "Sidi Bennour,Morocco",
+  title: "Web Developer",
+  logoUrl: "",
+  period: "Apr 2024 - Jun 2024",
+  description:
+    "Developed a web application for managing taxes on non-built land (TNB).",
+  achievements: [
+    "Designed a user-friendly interface for clients and administrators",
+    "Implemented user authentication and account management system",
+    "Developed land and tax management features using PHP and MySQL",
+    "Integrated payment tracking and reporting functionalities",
+    "Ensured data security and access control for administrators"
+  ]
+},
+       {
+  company: "Chambre d'agriculture of El Jadida",
+  href: "",
+  badges: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Bootstrap", "Tailwind CSS"],
+  location: "El Jadida, Morocco",
+  title: "Web Developer",
+  logoUrl: "",
+  period: "Aug 2023 - Sep 2023",
+  description:
+    "Developed a simple company website for the Chambre d'agriculture of El Jadida with essential features for user interaction.",
+  achievements: [
+    "Designed a responsive and user-friendly interface showcasing company information",
+    "Implemented contact forms and basic options for user interaction",
+    "Used PHP and MySQL to manage dynamic content",
+    "Applied Bootstrap and Tailwind CSS for styling and responsiveness"
+  ]
+}
 
+    ];
     const services = [
         {
             icon: <Code className="h-10 w-10 text-primary" />,
@@ -263,23 +243,47 @@ export function AboutSection() {
             technologies: ["React", "Next.js", "Express", "PostgreSQL"]
         },
         {
-            icon: <Cpu className="h-10 w-10 text-primary" />, // Changed icon
+            icon: <Cpu className="h-10 w-10 text-primary" />,
             title: "Process Automation",
             description: "Building custom automation solutions for data extraction, workflow optimization, and business process streamlining",
             technologies: ["Python", "Selenium", "BeautifulSoup", "Puppeteer"]
         },
         {
-            icon: <Smartphone className="h-10 w-10 text-primary" />, // Changed icon
+            icon: <Smartphone className="h-10 w-10 text-primary" />,
             title: "Cross-Platform Mobile Apps",
             description: "Development of performant mobile applications for iOS and Android using React Native",
             technologies: ["React Native", "Expo", "Firebase", "Redux"]
         },
         {
-            icon: <Cloud className="h-10 w-10 text-primary" />, // Changed icon
+            icon: <Cloud className="h-10 w-10 text-primary" />,
             title: "Cloud & DevOps Solutions",
             description: "Implementing CI/CD pipelines, cloud infrastructure, and deployment automation",
             technologies: ["AWS", "Docker", "GitHub Actions", "Vercel"]
         }
+    ];
+
+    const education = [
+        {
+            degree:"Software Engineering",
+            institution: "National Higher School of Artificial Intelligence and Data Sciences, Taroudant",
+            period: "2024 - Present",
+            focus: "Systems Architecture · AI Engineering · Cloud Computing",
+            courses: ["Distributed Systems", "Machine Learning", "DevOps Practices"]
+        },
+        {
+            degree:"Diploma in Computer Science",
+            institution: "Higher School of Technology, Sidi Bennour",
+            period: "2022 - 2024",
+            focus: "Full-Stack Development · Databases · System Design",
+            courses: ["Web Technologies", "Database Management", "Software Engineering"]
+        },
+        {
+            degree:"Baccalaureate in Science",
+            institution: "National High School Imame Elgazali, Casablanca",
+            period: "2022",
+            focus: "Computer Science · Mathematics · Physics",
+            honors: "Graduated with distinction in technical sciences"
+        },
     ];
     return (
         <section id="about" className="py-24 px-10 relative">
@@ -317,8 +321,8 @@ export function AboutSection() {
                         <AboutStars />
                         <div className="relative p-5 w-full aspect-square">
                             <img
-                                src="/NoureddineDRIOUECH.png"
-                                alt="Noureddine DRIOUECH"
+                                src="/HamzaBENCHAOUI.png"
+                                alt="Hamza BENCHAOUI"
                                 className="w-full px-5 h-auto rounded-full object-contain"
                             />
                         </div>
@@ -356,10 +360,10 @@ export function AboutSection() {
                         transition={{ duration: 0.6 }}
                     >
                         <h3 className="text-2xl sm:text-3xl font-bold">
-                            I'm <span className="text-primary">Noureddine DRIOUECH</span>
+                            I'm <span className="text-primary">Hamza BENCHAOUI</span>
                         </h3>
                         <p className="text-muted-foreground px-10">
-                            I'm Noureddine DRIOUECH, a Moroccan 🇲🇦 software engineer who turns ideas into interactive, scalable applications. I specialize in building modern SaaS tools using React, Next.js, Laravel, and Python. I’ve built dashboards for startups, scraped thousands of records from e-commerce platforms, and represented Morocco at GITEX Africa through a restaurant SaaS platform I helped develop.
+                         I'm Hamza BENCHAOUI, a Moroccan 🇲🇦 software engineer passionate about turning ideas into interactive and scalable applications. I specialize in building modern web applications using React, Next.js, Angular, Spring Boot, and Java. Through academic and personal projects, I’ve designed dashboards and developed data scraping solutions for e-commerce platforms.
                                </p>
 
 
@@ -413,7 +417,7 @@ export function AboutSection() {
 
                         <IconCloud images={images} aria-label="My Skills"/>
                         <div>
-                            <a href={'/CV%20Noureddine%20DRIOUECH%20.pdf'} download={'CV Noureddine DRIOUECH'}>
+                            <a href={'/CV%20Hamza%20BENCHAOUI.pdf'} download={'CV Hamza BENCHAOUI'}>
                                 <Button className="flex items-center gap-2"
                                         variant="outline">
                                     <Download className="h-4 w-4" />
@@ -468,11 +472,11 @@ export function AboutSection() {
                             ))}
                         </TabsContent>
 
-                        <TabsContent value="education" className="space-y-6">
+                       <TabsContent value="education" className="space-y-1">
                             {education.map((edu, index) => (
                                 <motion.div
                                     key={index}
-                                    className="relative p-6 rounded-2xl border border-transparent bg-gradient-to-br from-card to-[#f0f4ff] dark:to-[#0f172a] shadow-sm group overflow-hidden"
+                                    className="relative px-6 pt-4 pb-6 rounded-2xl border border-transparent bg-gradient-to-br from-card to-[#f0f4ff] dark:to-[#0f172a] shadow-sm group overflow-hidden"
                                     initial={{ opacity: 0, y: 30 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true, margin: "-50px" }}
@@ -490,13 +494,14 @@ export function AboutSection() {
                                     {/* Animated background element */}
                                     <div className="absolute inset-0 w-1 bg-gradient-to-b from-blue-500 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-                                    <div className="relative z-10 space-y-3">
+                                    <div className="relative z-10 space-y-1">
                                         <div className="flex items-start gap-4">
                                             <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-2 rounded-lg shadow-md">
                                                 <GraduationCapIcon className="h-6 w-6 text-white" />
                                             </div>
                                             <div>
-                                                <h4 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-800 dark:from-white to-gray-600 dark:to-gray-300">
+                                                <h4 className="text-xl font-bold mt-0 leading-tight ...">
+
                                                     {edu.degree}
                                                 </h4>
                                                 <p className="text-muted-foreground mt-1 flex items-center gap-2">
