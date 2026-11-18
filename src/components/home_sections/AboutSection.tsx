@@ -28,7 +28,25 @@ import {
     SiFramer,
     SiApachekafka,
     SiWebassembly,
-    SiCodemirror
+    SiCodemirror,
+    SiCplusplus,
+    SiC,
+    SiAngular,
+    SiFastapi,
+    SiDjango,
+    SiExpo,
+    SiBootstrap,
+    SiHtml5,
+    SiCss3,
+    SiOracle,
+    SiMongodb,
+    SiMariadb,
+    SiSupabase,
+    SiGithubactions,
+    SiEclipseide,
+    SiHuggingface,
+    SiPytorch,
+    SiTensorflow
 } from "react-icons/si";
 import { Button } from "@/components/ui/button";
 import {type JSX} from "react";
@@ -37,30 +55,51 @@ import {ResumeCard} from "@/components/resume-card.tsx";
 
 export function AboutSection() {
     const skills = [
-        "JavaScript",
-        "TypeScript",
-        "Python",
+        "C",
+        "C++",
         "Java",
         "PHP",
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "SQL",
         "React",
         "Next.js",
-        "Tailwind CSS",
-        "Shadcn UI",
         "Angular",
-        "Node.js",
-        "Laravel",
+        "React Native",
+        "Expo",
         "Spring Boot",
+        "Laravel",
+        "FastAPI",
+        "Django",
+        "Node.js",
+        "Tailwind CSS",
+        "Bootstrap",
+        "HTML5",
+        "CSS3",
+        "Shadcn UI",
         "MySQL",
         "PostgreSQL",
+        "Oracle",
+        "MongoDB",
+        "MariaDB",
+        "Supabase",
         "Docker",
+        "Docker Compose",
+        "GitHub Actions",
+        "Linux",
         "Vercel",
-        "Linux System Administration",
-        "Agile Methodologies",
-        "Git Version Control",
-        "Code Review",
-        "Web Automation",
-        "Data Scraping",
+        "Git",
+        "GitHub",
+        "VS Code",
+        "Eclipse",
         "Junit5",
+        "Selenium",
+        "Framer Motion",
+        "Machine Learning",
+        "Generative AI",
+        "Prompt Engineering",
+        "AI Integration",
     ];
 
     // map known skill names to simpleicons slugs
@@ -83,11 +122,36 @@ export function AboutSection() {
         "Docker": "docker",
         "Vercel": "vercel",
         "Linux System Administration": "linux",
+        "Linux": "linux",
         "Junit5": "junit",
         "Selenium": "selenium",
         "Git Version Control": "git",
+        "Git": "git",
+        "GitHub": "github",
         "Data Scraping": "scrapy",
         "Framer Motion": "framer",
+        "C": "c",
+        "C++": "cplusplus",
+        "SQL": "sql",
+        "React Native": "reactnative",
+        "Expo": "expo",
+        "FastAPI": "fastapi",
+        "Django": "django",
+        "Bootstrap": "bootstrap",
+        "HTML5": "html5",
+        "CSS3": "css3",
+        "Oracle": "oracle",
+        "MongoDB": "mongodb",
+        "MariaDB": "mariadb",
+        "Supabase": "supabase",
+        "Docker Compose": "docker",
+        "GitHub Actions": "githubactions",
+        "VS Code": "visualstudiocode",
+        "Eclipse": "eclipse",
+        "Machine Learning": "machinelearning",
+        "Generative AI": "generativeai",
+        "Prompt Engineering": "promptengineering",
+        "AI Integration": "aiintegration",
     };
 
     function getSlugsFromSkills(list: string[]) {
@@ -115,9 +179,7 @@ export function AboutSection() {
         "Tailwind CSS": <SiTailwindcss className="text-sky-400" />,
         "Shadcn UI": <SiShadcnui className="text-black dark:text-white" />,
         "Framer Motion": <SiFramer className="text-purple-600" />,
-        Angular: (
-            <img src="https://cdn.simpleicons.org/angular" alt="Angular" className="h-5 w-5 object-contain" />
-        ),
+        Angular: <SiAngular className="text-red-500" />,
         "Node.js": <SiNodedotjs className="text-green-600" />,
         Laravel: <SiLaravel className="text-red-500" />,
         "Spring Boot": <SiSpring className="text-green-600" />,
@@ -147,22 +209,80 @@ export function AboutSection() {
         PostgreSQL: <SiPostgresql className="text-blue-400" />,
         Docker: <SiDocker className="text-blue-400" />,
         Vercel: <SiVercel className="text-black dark:text-white" />,
-        "Linux System Administration": <SiLinux className="text-black dark:text-white" />,
+        Linux: <SiLinux className="text-black dark:text-white" />,
         Jest: <SiJest className="text-red-600" />,
         Jsoup: (
             <img src="https://miro.medium.com/1*PUhJSYJsiAMJjCF_yMkq8A.jpeg" alt="Jsoup" className="h-5 w-5 object-contain" />
         ),
         WebSockets: <SiSocketdotio className="text-black dark:text-white" />,
-        "Git Version Control": <SiGit className="text-orange-500" />,
+        Git: <SiGit className="text-orange-500" />,
+        GitHub: (
+            <img src="https://cdn.simpleicons.org/github" alt="GitHub" className="h-5 w-5 object-contain" />
+        ),
         "Data Scraping": <SiCodemirror className="text-yellow-500" />,
         "Algorithms & Data Structures": <SiWebassembly className="text-purple-500" />,
         "System Design": <SiApachekafka className="text-black dark:text-white" />,
         "Code Review": <SiCodemirror className="text-yellow-500" />,
         "Agile Methodologies": <SiApachekafka className="text-orange-500" />,
+        C: <SiC className="text-blue-500" />,
+        "C++": <SiCplusplus className="text-blue-600" />,
+        SQL: (
+            <img src="https://cdn.simpleicons.org/sql" alt="SQL" className="h-5 w-5 object-contain" />
+        ),
+        "React Native": <SiReact className="text-cyan-400" />,
+        Expo: <SiExpo className="text-black dark:text-white" />,
+        FastAPI: <SiFastapi className="text-green-500" />,
+        Django: <SiDjango className="text-green-700" />,
+        Bootstrap: <SiBootstrap className="text-purple-600" />,
+        HTML5: <SiHtml5 className="text-orange-500" />,
+        CSS3: <SiCss3 className="text-blue-500" />,
+        Oracle: <SiOracle className="text-red-600" />,
+        MongoDB: <SiMongodb className="text-green-600" />,
+        MariaDB: <SiMariadb className="text-blue-600" />,
+        Supabase: <SiSupabase className="text-green-500" />,
+        "Docker Compose": <SiDocker className="text-blue-400" />,
+        "GitHub Actions": <SiGithubactions className="text-blue-600" />,
+        "VS Code": (
+            <img src="https://cdn.simpleicons.org/visualstudiocode" alt="VS Code" className="h-5 w-5 object-contain" />
+        ),
+        Eclipse: <SiEclipseide className="text-orange-600" />,
+        "Machine Learning": <SiPytorch className="text-orange-500" />,
+        "Generative AI": <SiHuggingface className="text-yellow-500" />,
+        "Prompt Engineering": <SiHuggingface className="text-yellow-500" />,
+        "AI Integration": <SiTensorflow className="text-orange-500" />,
     };
-    const experiences = [
+const experiences = [
         {
-  company: "Kaoba",
+    company: "Effyis Group – Lodin Pay",
+    href: "",
+    badges: [
+      "ReactJS",
+      "TypeScript",
+      "Tailwind CSS",
+      "Spring Boot",
+      "Java",
+      "PostgreSQL",
+      "Docker",
+      "Flyway",
+      "REST API",
+      "TanStack Query",
+      "Git",
+      "Postman"
+    ],
+    location: "Remote",
+    title: "Full Stack Developer Intern",
+    logoUrl: "/effyis_logo.png",
+    period: "Jul 2026 - Aug 2026",
+    description:
+      "Contributed to the development of a SaaS Open Banking platform enabling partner companies to access and integrate payment and banking service APIs, centralizing their configuration, usage, and operation tracking via a Partner Console.",
+    achievements: [
+      "Integrated the Account Check service: frontend, backend APIs, and banking verification flow",
+      "Developed Analytics AIS/PISP modules and operation tracking dashboards",
+      "Participated in the implementation of the institutional landing page"
+    ]
+  },
+        {
+    company: "Kaoba",
   href: "",
   badges: [
     "Next.js",
@@ -417,7 +537,7 @@ export function AboutSection() {
 
                         <IconCloud images={images} aria-label="My Skills"/>
                         <div>
-                            <a href={'/Cv_Hamza_BENCHAOUI_STAGE.pdf'} download={'CV Hamza BENCHAOUI'}>
+                            <a href={'/BENCHAOUI_Hamza_Stage_PFE.pdf'} download={'CV Hamza BENCHAOUI'}>
                                 <Button className="flex items-center gap-2"
                                         variant="outline">
                                     <Download className="h-4 w-4" />
@@ -496,11 +616,11 @@ export function AboutSection() {
 
                                     <div className="relative z-10 space-y-1">
                                         <div className="flex items-start gap-4">
-                                            <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-2 rounded-lg shadow-md">
+                                            <div className="bg-gradient-to-r from-blue-500 to-purple-600 p-2 rounded-lg shadow-md flex-shrink-0">
                                                 <GraduationCapIcon className="h-6 w-6 text-white" />
                                             </div>
-                                            <div>
-                                                <h4 className="text-xl font-bold mt-0 leading-tight ...">
+                                            <div className="flex-1 min-w-0">
+                                                <h4 className="text-xl font-bold mt-0 leading-tight">
 
                                                     {edu.degree}
                                                 </h4>

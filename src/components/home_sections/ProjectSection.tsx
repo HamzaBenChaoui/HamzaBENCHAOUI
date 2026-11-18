@@ -31,16 +31,27 @@ import {
     SiAppwrite
 } from "react-icons/si";
 import {Lens} from "@/components/ui/lens.tsx";
+import { SiExpo } from "react-icons/si";
 // import Component from "@/components/achievement-card.tsx";
 import SplitText from "@/ui/TextAnimations/SplitText/SplitText.tsx";
 import {AchievementCard} from "@/components/achievement-card.tsx";
 
 export function ProjectSection() {
     const [activeFilter, setActiveFilter] = useState("All");
-    const filters = ["All", "Web", "Scripts"];
+    const filters = ["All", "Web", "Mobile", "Scripts"];
 
-    const projects = [
- {
+const projects = [
+  {
+    id: 1,
+    title: "UnifiedNotificationHub – Centralisation intelligente des notifications mobiles",
+    description: "Développement d'une application mobile personnelle visant à centraliser et classifier automatiquement l'ensemble des notifications smartphone via une architecture modulaire et temps réel. Conception d'un module natif Android custom basé sur l'AccessibilityService pour l'interception sécurisée et le stockage local des notifications. Intégration d'un système de gestion temps réel avec Socket.io et Novu pour un flux de notifications fluide et structuré par catégories.",
+    image: "Notification.jpeg",
+    category: "Mobile",
+    tags: ["React Native", "Expo", "TypeScript", "Socket.io", "Novu", "AsyncStorage", "Android Native Module"],
+    liveUrl: "",
+    githubUrl: "https://github.com/HamzaBenChaoui/UnifiedNotificationHube_Mobile-Application.git"
+  },
+  {
   id: 3,
   title: "AttendifyAI – Smart Attendance System",
   description: "An AI-powered web application that automatically records student attendance from a group photo. AttendifyAI reduces time spent on roll calls, minimizes manual errors, and centralizes attendance data for easy analysis by teachers and administration.",
@@ -109,6 +120,16 @@ export function ProjectSection() {
         "Design System": <SiTailwindcss className="text-sky-400" />,
         Appwrite: <SiAppwrite className="text-red-500" />,
         Automation: <TbSettingsAutomation className="text-green-500" />,
+        Expo: <SiExpo className="text-black dark:text-white" />,
+        Novu: (
+            <img src="https://cdn.simpleicons.org/novu" alt="Novu" className="w-4 h-4" />
+        ),
+        AsyncStorage: (
+            <img src="https://cdn.simpleicons.org/asyncstorage" alt="AsyncStorage" className="w-4 h-4" />
+        ),
+        "Android Native Module": (
+            <img src="https://cdn.simpleicons.org/android" alt="Android" className="w-4 h-4" />
+        ),
     };
 
     const filteredProjects =
